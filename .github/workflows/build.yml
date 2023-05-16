@@ -1,4 +1,4 @@
-name: Build the project
+name: Build pdf2htmlEX project
 
 on: [push]
 
@@ -13,7 +13,7 @@ jobs:
         run: './buildScripts/travisLinuxDoItAll'
 
       - name: Upload artifact
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: my-artifact
           path: pdf2htmlEX/build
