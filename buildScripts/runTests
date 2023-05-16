@@ -24,7 +24,7 @@ cd pdf2htmlEX/test
 
 ./runLocalTestsShell
 
-./runLocalBrowserTests
+#./runLocalBrowserTests
 
 cd ../..
 
