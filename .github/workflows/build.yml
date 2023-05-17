@@ -15,7 +15,7 @@ jobs:
 
       - name: Run test for project
         run: |
-          './pdf2htmlEX/test/runLocalTestsShell'
+          './pdf2htmlEX/test/testOutput'
 
       - name: Upload artifact
         uses: actions/upload-artifact@v3
