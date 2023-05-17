@@ -1,4 +1,4 @@
-name: Build pdf2htmlEX project
+name: Build the project
 
 on: [push]
 
@@ -10,7 +10,12 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Build project with APT
-        run: './buildScripts/travisLinuxDoItAll'
+        run: |
+          './buildScripts/buildInstallLocallyApt'
+
+      - name: Run test for project
+        run: |
+          './test/runLocalTestsShell'
 
       - name: Upload artifact
         uses: actions/upload-artifact@v3
